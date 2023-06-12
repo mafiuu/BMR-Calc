@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MyDietCalc</title>
 </head>
+
 <body>
-    hello
+    <header>
+        <h1>BMR Calculator</h1>
+        <h1>Calories Calculator</h1>
+    </header>
+    <div class="BMR">
+        <h2 class="UsUnit-Selector">US Units</h2>
+        <h2 class="Metric-Selector">Metric</h2>
+        <div class="client-info">
+            <div class="gender-input">
+                <label for="Gender">Male</label>
+                <input type="radio" name="Gender" id="Male" value="Male">
+                <label for="Gender">Female</label>
+                <input type="radio" name="Gender" id="Female" value="Female">
+            </div>
+            <div class="US-Units">
+                <div class="client-weight">
+                    <label for="Usweight">Weight:</label>
+                    <input type="number" name="UsWeight" id="UsWeight" placeholder="lbs">
+                </div>
+                <div class="client-height">
+                    <label for="UsHeight">Height:</label>
+                    <input type="number" name="UsFt" id="UsFt" placeholder="feet">
+                    <input type="number" name="UsInches" id="UsInches" placeholder="inches">
+                </div>
+            </div>
+            <div class="Metric" hidden>
+                <div class="client-weight">
+                    <label for="MetricWeight">Weight:</label>
+                    <input type="number" name="MetricWeight" id="MetricWeight" placeholder="kgs">
+                </div>
+                <div class="client-height">
+                    <label for="MetricHeight">Height:</label>
+                    <input type="number" name="MetricHeight" id="MetricHeight" placeholder="centimeters">
+                </div>
+            </div>
+            <div class="client-age">
+                <label for="UsAge">Age:</label>
+                <input type="number" name="UsAge" id="UsAge" min="15" max="80" placeholder="15-80">
+            </div>
+            <p class="submit">submit</p>
+        </div>
+    </div>
+
+    </div>
+    </div>
+    </div>
+    <footer>
+
+    </footer>
+    <script src="BMRCalcUnits.js"></script>
+    <script src="BMRCalculator.js"></script>
 </body>
+
 </html>
