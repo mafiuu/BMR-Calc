@@ -15,8 +15,13 @@ window.addEventListener('click', function (e) {
 function showUsSystem() {
     UsUnits.removeAttribute('hidden')
     MetricUnit.setAttribute('hidden', "")
+    document.getElementById("MetricWeight").value = null
+    document.getElementById("MetricHeight").value = null
 }
 function showMetricSystem() {
     MetricUnit.removeAttribute('hidden')
     UsUnits.setAttribute('hidden', "")
+    document.getElementById("UsWeight").value = null
+    document.getElementById("UsFt").value = null
+    document.getElementById("UsInches").value = null
 }
