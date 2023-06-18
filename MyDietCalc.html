@@ -10,12 +10,12 @@
 
 <body>
     <header>
-        <h1>BMR Calculator</h1>
-        <h1>Calories Calculator</h1>
+        <h1 id="BMRCalculatorSelector">BMR Calculator</h1>
+        <h1 id="CaloriesCalculatorSelector">Calories Calculator</h1>
     </header>
     <div class="BMR">
-        <h2 class="UsUnit-Selector">US Units</h2>
-        <h2 class="Metric-Selector">Metric</h2>
+        <h2 id="UsUnitSelector">US Units</h2>
+        <h2 id="MetricSelector">Metric</h2>
         <div class="client-info">
             <div class="gender-input">
                 <label for="gender-input">Gender:</label>
@@ -49,14 +49,12 @@
                 <label for="Age">Age:</label>
                 <input type="number" name="Age" id="Age" min="15" max="80" placeholder="15-80">
             </div>
-            <p class="submit">submit</p>
-            <p class="reset">reset</p>
+            <div class="bottom">
+                <p class="submit">submit</p>
+                <p class="reset">reset</p>
+                <p class="response"></p>
+            </div>
         </div>
-        <p class="response"></p>
-    </div>
-
-    </div>
-    </div>
     </div>
     <footer>
 

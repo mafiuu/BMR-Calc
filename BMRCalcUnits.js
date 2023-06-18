@@ -1,6 +1,6 @@
-let UsSelector = document.querySelector(".UsUnit-Selector")
+let UsSelector = document.getElementById("UsUnitSelector")
 let UsUnits = document.querySelector(".US-Units")
-let MetrcSelector = document.querySelector(".Metric-Selector")
+let MetrcSelector = document.getElementById("MetricSelector")
 let MetricUnit = document.querySelector(".Metric")
 
 window.addEventListener('click', function (e) {
@@ -21,7 +21,6 @@ function showUsSystem() {
 function showMetricSystem() {
     MetricUnit.removeAttribute('hidden')
     UsUnits.setAttribute('hidden', "")
-    document.getElementById("UsWeight").value = null
     document.getElementById("UsFt").value = null
     document.getElementById("UsInches").value = null
 }

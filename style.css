@@ -1,0 +1,110 @@
+body {
+    display: grid;
+    background-color: #2E3239;
+    grid-template-rows: 70px auto;
+    color: antiquewhite;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+header {
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 250px 250px auto;
+}
+
+#BMRCalculatorSelector {
+    grid-column: 1/2;
+}
+
+#CaloriesCalculatorSelector {
+    grid-column: 2/-1;
+}
+
+.BMR {
+    grid-row: 2/-1;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 60px auto;
+}
+
+#UsUnitSelector {
+    border-left: solid black;
+    border-top: solid black;
+    border-right: solid black;
+    justify-self: right;
+    width: 125px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #5f7adb;
+    padding-top: 5px;
+    padding-bottom: 70px;
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+#MetricSelector {
+    border-left: solid black;
+    border-top: solid black;
+    border-right: solid black;
+    justify-self: left;
+    width: 125px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #5f7adb;
+    padding-top: 5px;
+    padding-bottom: 70px;
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+
+.client-info {
+    justify-items: center;
+    width: 50%;
+    border-left: solid black;
+    border-bottom: solid black;
+    border-right: solid black;
+    border-radius: 20px;
+    background-color: #5f7adb;
+    padding: 20px;
+    justify-self: center;
+    grid-row: 2/-1;
+    grid-column: 1/-1;
+    display: grid;
+}
+
+.bottom {
+    width: 120px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25px auto;
+}
+
+.submit {
+justify-self: center;
+grid-column: 1/2;
+grid-row: 1/2;
+}
+
+.reset {
+    justify-self: center;
+    grid-column: 2/-1;
+    grid-row: 1/2;
+}
+
+.response {
+    justify-self: center;
+    grid-column: 1/-1;
+    grid-row: 2/-1;
+}
+
+input {
+    background-color: #a2b2ee;
+    border-radius: 5px;
+}
+
+::placeholder {
+    color: antiquewhite;
+    border-radius: 2px;
+}
