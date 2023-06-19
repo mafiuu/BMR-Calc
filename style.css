@@ -1,10 +1,11 @@
-html{
+html {
     height: 100%;
 }
+
 body {
     display: grid;
     height: 80%;
-    background-color: #2E3239;
+    background-color: #292f3a;
     grid-template-rows: 15% 75%;
     color: antiquewhite;
     text-decoration: none;
@@ -49,10 +50,12 @@ body {
     grid-row: 1/2;
     grid-column: 1/2;
 }
-#UsUnitSelector.selected{
+
+#UsUnitSelector.selected {
     background-color: #2b4fd4;
 }
-#UsUnitSelector:hover{
+
+#UsUnitSelector:hover {
     background-color: #a2b2ee;
 }
 
@@ -70,21 +73,22 @@ body {
     grid-row: 1/2;
     grid-column: 2/-1;
 }
-#MetricSelector.selected{
+
+#MetricSelector.selected {
     background-color: #2b4fd4;
 }
-#MetricSelector:hover{
+
+#MetricSelector:hover {
     background-color: #a2b2ee;
 }
+
 .client-info {
     justify-items: center;
     justify-self: center;
     align-items: center;
     width: 50%;
     height: 90%;
-    border-bottom: solid black;
-    border-left: solid black;
-    border-right: solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 20px;
     background-color: #5f7adb;
     padding: 20px;
@@ -92,30 +96,35 @@ body {
     grid-column: 1/-1;
     display: grid;
 }
-.gender-input{
+
+.gender-input {
     margin-top: 5px;
     font-size: x-large;
     font-family: sans-serif;
 }
-.client-weight{
+
+.client-weight {
     height: 50%;
     text-align: center;
     margin-top: 5px;
     font-size: x-large;
     font-family: sans-serif;
 }
-.client-height{
+
+.client-height {
     height: 50%;
     text-align: center;
     margin-top: 5px;
     font-size: x-large;
     font-family: sans-serif;
 }
-.client-age{
+
+.client-age {
     margin-top: 5px;
     font-size: x-large;
     font-family: sans-serif;
 }
+
 .bottom {
     display: grid;
     height: 100%;
@@ -124,6 +133,7 @@ body {
 }
 
 .submit {
+    margin-right: 2px;
     width: 105px;
     text-align: center;
     align-self: baseline;
@@ -135,15 +145,16 @@ body {
     grid-row: 1/2;
     border-radius: 10px;
     background: #a2b2ee;
-    border-bottom: solid black;
-    border-left: solid rgb(64, 64, 64);
-    border-right: solid rgb(64, 64, 64);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
-.submit:hover{
-    background:#8a9fe9;
+
+.submit:hover {
+    background: #8a9fe9;
 }
 
 .reset {
+    margin-left: 2px;
     width: 105px;
     text-align: center;
     align-self: baseline;
@@ -155,12 +166,11 @@ body {
     grid-row: 1/2;
     border-radius: 10px;
     background: #a2b2ee;
-    border-bottom: solid black;
-    border-left: solid rgb(64, 64, 64);
-    border-right: solid rgb(64, 64, 64);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.reset:hover{
-    background:#8a9fe9;
+
+.reset:hover {
+    background: #8a9fe9;
 }
 
 .response {

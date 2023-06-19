@@ -43,7 +43,7 @@ window.addEventListener('click', function (e) {
     } else if (target == resetBtn)
         location.reload()
 })
-window.addEventListener('touch', function (e) {
+window.addEventListener('touchend', function (e) {
     target = e.target
     if (target == submitBtn) {
         UsWeight = document.getElementById("UsWeight").value
