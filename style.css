@@ -23,11 +23,13 @@ body {
 
 #BMRCalculatorSelector {
     grid-column: 1/2;
-    margin-left: 10%;
+    text-align: right;
+    margin-right: 10px;
 }
 
 #CaloriesCalculatorSelector {
     grid-column: 2/-1;
+    margin-left: 10px;
 }
 
 .BMR {
