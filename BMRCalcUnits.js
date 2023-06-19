@@ -12,6 +12,15 @@ window.addEventListener('click', function (e) {
         showMetricSystem()
     }
 })
+window.addEventListener('touch', function (e) {
+    target = e.target
+    if(target == UsSelector){
+        showUsSystem()
+    }
+    else if(target == MetrcSelector){
+        showMetricSystem()
+    }
+})
 function showUsSystem() {
     UsSelector.setAttribute('class',"selected")
     MetrcSelector.removeAttribute('class')
