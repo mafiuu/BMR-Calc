@@ -12,7 +12,7 @@ window.addEventListener('click', function (e) {
         showMetricSystem()
     }
 })
-window.addEventListener('touchend', function (e) {
+window.addEventListener('touch', function (e) {
     target = e.target
     if(target == UsSelector){
         showUsSystem()
