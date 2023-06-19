@@ -1,5 +1,6 @@
 html {
     height: 100%;
+    width: 100%;
 }
 
 body {
@@ -17,11 +18,12 @@ body {
     grid-row: 1/2;
     height: fit-content;
     display: grid;
-    grid-template-columns: 250px 300px;
+    grid-template-columns: 50% 50%;
 }
 
 #BMRCalculatorSelector {
     grid-column: 1/2;
+    margin-left: 10%;
 }
 
 #CaloriesCalculatorSelector {
@@ -139,14 +141,13 @@ body {
     align-self: baseline;
     justify-self: center;
     font-family: sans-serif;
-    font-size: xx-large;
-    padding: 8px;
+    font-size: x-large;
+    padding: 5px;
     grid-column: 1/2;
     grid-row: 1/2;
     border-radius: 10px;
     background: #a2b2ee;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
 
 .submit:hover {
@@ -160,8 +161,8 @@ body {
     align-self: baseline;
     justify-self: center;
     font-family: sans-serif;
-    font-size: xx-large;
-    padding: 8px;
+    font-size: x-large;
+    padding: 5px;
     grid-column: 2/-1;
     grid-row: 1/2;
     border-radius: 10px;
@@ -181,9 +182,17 @@ body {
     grid-row: 2/-1;
 }
 
-input {
+input[type=number] {
     background-color: #a2b2ee;
     border-radius: 5px;
+    height: 20px;
+    width: 75px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 ::placeholder {
