@@ -1,17 +1,22 @@
+html{
+    height: 100%;
+}
 body {
     display: grid;
+    height: 80%;
     background-color: #2E3239;
-    grid-template-rows: 70px auto;
+    grid-template-rows: 15% 75%;
     color: antiquewhite;
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
 
 }
 
-header {
+.head {
     grid-row: 1/2;
+    height: fit-content;
     display: grid;
-    grid-template-columns: 250px 250px auto;
+    grid-template-columns: 250px 300px;
 }
 
 #BMRCalculatorSelector {
@@ -25,8 +30,9 @@ header {
 .BMR {
     grid-row: 2/-1;
     display: grid;
+    height: 100%;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 60px auto;
+    grid-template-rows: 15% 85%;
 }
 
 #UsUnitSelector {
@@ -72,34 +78,62 @@ header {
 }
 .client-info {
     justify-items: center;
+    justify-self: center;
+    align-items: center;
     width: 50%;
+    height: 90%;
     border-bottom: solid black;
     border-left: solid black;
     border-right: solid black;
     border-radius: 20px;
     background-color: #5f7adb;
     padding: 20px;
-    justify-self: center;
     grid-row: 2/-1;
     grid-column: 1/-1;
     display: grid;
 }
-
+.gender-input{
+    margin-top: 5px;
+    font-size: x-large;
+    font-family: sans-serif;
+}
+.client-weight{
+    height: 50%;
+    text-align: center;
+    margin-top: 5px;
+    font-size: x-large;
+    font-family: sans-serif;
+}
+.client-height{
+    height: 50%;
+    text-align: center;
+    margin-top: 5px;
+    font-size: x-large;
+    font-family: sans-serif;
+}
+.client-age{
+    margin-top: 5px;
+    font-size: x-large;
+    font-family: sans-serif;
+}
 .bottom {
-    width: 120px;
     display: grid;
+    height: 100%;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 25px auto;
+    grid-template-rows: 60px auto;
 }
 
 .submit {
+    width: 105px;
+    text-align: center;
+    align-self: baseline;
     justify-self: center;
+    font-family: sans-serif;
+    font-size: xx-large;
+    padding: 8px;
     grid-column: 1/2;
     grid-row: 1/2;
-    margin-top: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-    border-radius: 4px;
+    border-radius: 10px;
     background: #a2b2ee;
     border-bottom: solid black;
     border-left: solid rgb(64, 64, 64);
@@ -110,13 +144,16 @@ header {
 }
 
 .reset {
+    width: 105px;
+    text-align: center;
+    align-self: baseline;
     justify-self: center;
+    font-family: sans-serif;
+    font-size: xx-large;
+    padding: 8px;
     grid-column: 2/-1;
     grid-row: 1/2;
-    margin-top: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-    border-radius: 4px;
+    border-radius: 10px;
     background: #a2b2ee;
     border-bottom: solid black;
     border-left: solid rgb(64, 64, 64);
@@ -127,6 +164,8 @@ header {
 }
 
 .response {
+    font-family: sans-serif;
+    font-size: larger;
     justify-self: center;
     grid-column: 1/-1;
     grid-row: 2/-1;
