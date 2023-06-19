@@ -25,7 +25,7 @@ header {
 .BMR {
     grid-row: 2/-1;
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 60px auto;
 }
 
@@ -33,15 +33,21 @@ header {
     border-left: solid black;
     border-top: solid black;
     border-right: solid black;
-    justify-self: right;
     width: 125px;
+    justify-self: right;
     text-align: center;
     border-radius: 20px;
     background-color: #5f7adb;
     padding-top: 5px;
     padding-bottom: 70px;
     grid-row: 1/2;
-    grid-column: 2/3;
+    grid-column: 1/2;
+}
+#UsUnitSelector.selected{
+    background-color: #2b4fd4;
+}
+#UsUnitSelector:hover{
+    background-color: #a2b2ee;
 }
 
 #MetricSelector {
@@ -56,14 +62,19 @@ header {
     padding-top: 5px;
     padding-bottom: 70px;
     grid-row: 1/2;
-    grid-column: 3/4;
+    grid-column: 2/-1;
 }
-
+#MetricSelector.selected{
+    background-color: #2b4fd4;
+}
+#MetricSelector:hover{
+    background-color: #a2b2ee;
+}
 .client-info {
     justify-items: center;
     width: 50%;
-    border-left: solid black;
     border-bottom: solid black;
+    border-left: solid black;
     border-right: solid black;
     border-radius: 20px;
     background-color: #5f7adb;
@@ -82,15 +93,37 @@ header {
 }
 
 .submit {
-justify-self: center;
-grid-column: 1/2;
-grid-row: 1/2;
+    justify-self: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 4px;
+    background: #a2b2ee;
+    border-bottom: solid black;
+    border-left: solid rgb(64, 64, 64);
+    border-right: solid rgb(64, 64, 64);
+}
+.submit:hover{
+    background:#8a9fe9;
 }
 
 .reset {
     justify-self: center;
     grid-column: 2/-1;
     grid-row: 1/2;
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 4px;
+    background: #a2b2ee;
+    border-bottom: solid black;
+    border-left: solid rgb(64, 64, 64);
+    border-right: solid rgb(64, 64, 64);
+}
+.reset:hover{
+    background:#8a9fe9;
 }
 
 .response {
